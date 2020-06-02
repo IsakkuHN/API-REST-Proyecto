@@ -1,6 +1,6 @@
 <?php
     class Usuario{
-        
+
         private $nombre;
         private $apellido;
         private $codigoUsuario;
@@ -79,9 +79,7 @@
             );
             $archivo = fopen("../data/usuario.json","w");
             fwrite($archivo,json_encode($usuarios));
-            //echo json_encode($usuarios);
             fclose($archivo);
-
         }
 
         public static function comprarArticulo($codigoUsuario){
@@ -118,9 +116,9 @@
                 if($usuarios[$i]["codigoUsuario"]==$id){
                     $indice=$i;
                 }
-                else{
+            }
+            if($indice==null){
                     echo '"mensaje":"el id del usuario a obtener no existe"';
-                }
             }
             echo json_encode($usuarios[$indice]);
         }

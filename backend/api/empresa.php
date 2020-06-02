@@ -27,38 +27,36 @@
         case 'GET':
             
             if(isset($_GET['id'])) {
-                Usuario::obtenerUsuario($_GET['id']);
+                Empresa::obtenerEmpresa($_GET['id']);
             }
             else{
-                Usuario::obtenerUsuarios();
+                Empresa::obtenerEmpresas();
             }
         break;
         case 'PUT':
             //echo "Actualizar Un Usuario";
             $_PUT = json_decode(file_get_contents('php://input'), true);
-            $usuario = new Usuario(
-                $_PUT["nombre"],
-                $_PUT["apellido"],
-                $_PUT["codigoUsuario"],
+            $empresa = new Empresa(
+                $_PUT["nombreEmpresa"],
+                $_PUT["codigoEmpresa"],
+                $_PUT["urlBanner"],
+                $_PUT["urlLogotipo"],
                 $_PUT["pais"],
                 $_PUT["direccion"],
-                $_PUT["urlImgPerfil"],
+                $_PUT["web"],
                 $_PUT["email"],
-                $_PUT["telefono"],
-                $_PUT["codigoPostal"],
-                $_PUT["fechaNacimiento"],
                 $_PUT["contrasena"]
             );
-            $usuario->actualizarUsuario($_GET['id']);
+            $empresa->actualizarEmpresa($_GET['id']);
             $resultado['Mensaje'] = ' id= '.$_GET['id'].', informacion a actualizar: '.json_encode($_PUT);
-            $usuario =null;
+            $empresa =null;
             echo json_encode($resultado);
 
 
         break;
         case 'DELETE':
             
-            Usuario::eliminarUsuario($_GET['id']);
+            Empresa::eliminarEmpresa($_GET['id']);
             $resultado['Mensaje'] = "Eliminar un usuario con el id: ".$_GET['id'];
             echo json_encode($resultado);
         break;
