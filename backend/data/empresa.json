@@ -1,43 +1,43 @@
 [
   {
-    "nombreEmpresa": "Los Namecusein",
+    "nombreEmpresa": "Sayayin S.A.",
     "codigoEmpresa": 1,
     "urlBanner": "../img/animado2.gif",
     "urlLogotipo": "../img/perfil.jpg",
     "pais": "Honduras",
-    "direccion": "Dep. Francisco Moraz\u00e1n, Tegucigalpa M.D.C., Facultad de Ingeniria.",
-    "web": "www.VentasNamecusein.hn",
-    "email": "Gerencia@Shenglong.com",
-    "contrasena": "asd.456",
+    "direccion": "Dep. Francisco Moraz\u00e1n, Tegucigalpa M.D.C.",
+    "web": "www.elgrankaiosama.com",
+    "email": "gerencia@grankaio.com",
+    "contrasena": "abc123",
     "redesSociales": {
-      "facebook": "Los Name",
-      "instagram": "@Gojan_Name",
-      "twitter": "Los Namecusein S.A."
+      "facebook": "Sayayin S.A.",
+      "instagram": "@ElmeroGoku",
+      "twitter": "Ozaru"
     },
     "productos": [
       {
-        "nombre": "Esferas #2",
+        "nombre": "Esferas #1",
         "codigo": 1,
-        "descripcion": "Son esferas de dos metros de diametro con colores llamativos",
+        "descripcion": "Son esferas de un metro de diametro con colores llamativos",
         "imagen": "../img/Oferta-3.jpg",
-        "precioInicial": 1250.26,
-        "descuento": 50,
+        "precioInicial": "1250",
+        "descuento": "50",
         "inicioOferta": "12-24-2012",
         "finOferta": "12-31-2012",
-        "cantidad": 100,
-        "sucursalDisponible": [1]
+        "cantidad": "100",
+        "sucursalDisponible": ["1"]
       },
       {
         "nombre": "Esferas #2",
         "codigo": 1,
         "descripcion": "Son esferas de dos metros de diametro con colores llamativos",
         "imagen": "../img/Oferta-2.jpg",
-        "precioInicial": 1250.26,
-        "descuento": 50,
+        "precioInicial": "1500",
+        "descuento": "20",
         "inicioOferta": "12-24-2012",
         "finOferta": "12-31-2012",
-        "cantidad": 100,
-        "sucursalDisponible": [1]
+        "cantidad": "80",
+        "sucursalDisponible": ["1"]
       },
       {
         "nombre": "Collar de Oolong",
@@ -50,6 +50,42 @@
         "finOferta": "2020-06-07",
         "cantidad": "15",
         "sucursalDisponible": ["3"]
+      },
+      {
+        "nombre": "QCY qs1 TWS",
+        "codigo": "4",
+        "descripcion": "auriculares Bluetooth 3D estéreo auriculares inalambricos con microfono dual",
+        "imagen": "https://ae01.alicdn.com/kf/H4848c0708f104f08bc8e90cb852a8ed9p/QCY-qs1-TWS-5-0-auriculares-Bluetooth-3D-est-reo-auriculares-inal-mbricos-con-micr-fono.jpg",
+        "precioInicial": "2500",
+        "descuento": "10",
+        "inicioOferta": "2020-06-13",
+        "finOferta": "2020-06-15",
+        "cantidad": "10",
+        "sucursalDisponible": ["1"]
+      },
+      {
+        "nombre": "LIGE 2020",
+        "codigo": "75",
+        "descripcion": "nuevos relojes de moda para hombre con Acero Inoxidable marca superior de lujo deportes cronografo reloj de cuarzo hombres Relogio Masculino",
+        "imagen": "https://ae01.alicdn.com/kf/Hd139ebcc3bd348e8a1cd74e533b2890et/LIGE-2020-nuevos-relojes-de-moda-para-hombre-con-Acero-Inoxidable-marca-superior-de-lujo-deportes.jpg",
+        "precioInicial": "3500",
+        "descuento": "10",
+        "inicioOferta": "2020-05-01",
+        "finOferta": "2020-06-30",
+        "cantidad": "9",
+        "sucursalDisponible": ["1"]
+      },
+      {
+        "nombre": "Eachine E58 WIFI FPV",
+        "codigo": "07",
+        "descripcion": "gran angular cámara HD 1080P Modo de retención de altura brazo plegable RC Quadcopter Drone X dron Pro RTF para regalo",
+        "imagen": "https://ae01.alicdn.com/kf/H33dbf79cb5454a8bba7bb9539412e846c.jpg_350x350.jpg",
+        "precioInicial": "15000",
+        "descuento": "20",
+        "inicioOferta": "2020-06-01",
+        "finOferta": "2020-09-07",
+        "cantidad": "3",
+        "sucursalDisponible": ["1"]
       }
     ],
     "comentarios": [
@@ -69,7 +105,7 @@
     ]
   },
   {
-    "nombreEmpresa": "TigoHn2",
+    "nombreEmpresa": "TecnoHN",
     "codigoEmpresa": 2,
     "urlBanner": "../img/animado2la tortura.gif",
     "urlLogotipo": "../img/perfil aguacates.jpg",
@@ -79,7 +115,56 @@
     "email": "gerenciaadministrativa@tigo.com",
     "contrasena": "asd.456",
     "redesSociales": { "facebook": "", "instagram": "", "twitter": "" },
-    "productos": [],
+    "productos": [
+      {
+        "nombre": "SAMSUNG Micro SD",
+        "codigo": 1,
+        "descripcion": "Flash Microsd nuevo micro SD tarjetas clase 10",
+        "imagen": "https://ae01.alicdn.com/kf/HTB1_FZTGHGYBuNjy0Foq6AiBFXaM/SAMSUNG-tarjeta-de-memoria-Micro-SD-cart-o-de-memoria-256-GB-16-GB-32-GB.jpg_300x300.jpg",
+        "precioInicial": "1500",
+        "descuento": "50",
+        "inicioOferta": "03-06-2020",
+        "finOferta": "18-06-2020",
+        "cantidad": "7",
+        "sucursalDisponible": ["1"]
+      },
+      {
+        "nombre": "Bandolera multifuncion OZUKO",
+        "codigo": "9",
+        "descripcion": "bolsas de mensajero de hombro antirrobo para hombre, bolso de viaje corto impermeable para hombre",
+        "imagen": "https://ae01.alicdn.com/kf/HTB1LZH2RSzqK1RjSZPcq6zTepXay/Novedad-de-2019-Bandolera-multifunci-n-OZUKO-para-hombre-bolsas-de-mensajero-de-hombro-antirrobo.jpg_300x300.jpg",
+        "precioInicial": "1799",
+        "descuento": "33",
+        "inicioOferta": "11-02-2020",
+        "finOferta": "12-09-2020",
+        "cantidad": "1000",
+        "sucursalDisponible": ["1"]
+      },
+      {
+        "nombre": "Mini USB ventilador portátil",
+        "codigo": "45",
+        "descripcion": "Aire acondicionado 7 colores luz escritorio ventilador de refrigeración humidificador purificador para oficina dormitorio",
+        "imagen": "https://ae01.alicdn.com/kf/H06edb4cdf3804addb27345eeaf3fa90a0/Mini-USB-ventilador-port-til-aire-acondicionado-7-colores-luz-escritorio-ventilador-de-refrigeraci-n-humidificador.jpg_300x300.jpg",
+        "precioInicial": "1700",
+        "descuento": "5",
+        "inicioOferta": "05-04-2020",
+        "finOferta": "17-07-2020",
+        "cantidad": "87",
+        "sucursalDisponible": ["1"]
+      },
+      {
+        "nombre": "Oneodio",
+        "codigo": 1,
+        "descripcion": "auriculares Bluetooth V5.0, auriculares inalambricos/con cable para DJ, estéreo inalambrico en la oreja + auriculares con cable para telefonos PC",
+        "imagen": "https://ae01.alicdn.com/kf/Hdd2de8e7dd464cb290e69e588955f38cy/Oneodio-auriculares-Bluetooth-V5-0-auriculares-inal-mbricos-con-cable-para-DJ-est-reo-inal-mbrico.jpg_300x300.jpg",
+        "precioInicial": "12500",
+        "descuento": "50",
+        "inicioOferta": "12-24-2020",
+        "finOferta": "12-31-2020",
+        "cantidad": "17",
+        "sucursalDisponible": ["1"]
+      }
+    ],
     "comentarios": [],
     "sucursales": []
   }

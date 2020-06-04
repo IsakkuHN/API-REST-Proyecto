@@ -24,9 +24,9 @@ axios({
                             <!-- Label -->
                             <h5 class="pink-text pb-2 pt-1"></i>${empresas[i].productos[j].nombre}</h5>
                             <button class="btn btn-outline-success waves-effect waves-light"
-                                data-toggle="modal" data-target="#staticProduct${j}"
+                                data-toggle="modal" data-target="#staticProduct${i}${j}"
                                 onclick="">Ver Mas</button>
-                            <div class="modal fade" id="staticProduct${j}" data-backdrop="static"
+                            <div class="modal fade" id="staticProduct${i}${j}" data-backdrop="static"
                                 data-keyboard="false" tabindex="-1" role="dialog"
                                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog dialog-scrollable modal-lg modal-dialog-centered">
@@ -51,8 +51,8 @@ axios({
                                                     Del ${empresas[i].productos[j].inicioOferta} al ${empresas[i].productos[j].finOferta} <br>
                                                     Precio Inicial Lps. ${empresas[i].productos[j].precioInicial} <br>
                                                     ${empresas[i].productos[j].descuento}% de Descuento<br>
-                                                    Unidades disponibles: ${empresas[i].productos[j].sucursalDisponible[0]} <br>
-                                                        <a href="#">${empresas[i].nombreEmpresa}</a>
+                                                    Unidades disponibles: ${empresas[i].productos[j].cantidad} <br>
+                                                        <a href="perfilEmpresa.html">${empresas[i].nombreEmpresa}</a>
                                                     </small>
                                                 </p>
                                             </div>
