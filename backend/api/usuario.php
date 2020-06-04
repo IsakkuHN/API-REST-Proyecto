@@ -1,7 +1,4 @@
 <?php
-
-    //echo "Informacion: ".file_get_contents('php://input');
-    //Recibir peticiones del Usuario 
     header("Content-Type: application/json");
     include_once("../class/class-usuario.php");
 

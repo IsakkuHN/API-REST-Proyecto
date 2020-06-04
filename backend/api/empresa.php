@@ -6,7 +6,8 @@
         case 'POST':
             //echo "Guardar";
             $_POST = json_decode(file_get_contents('php://input'), true);
-            $empresa = new Empresa(
+            
+                $empresa = new Empresa(
                 $_POST["nombreEmpresa"],
                 $_POST["codigoEmpresa"],
                 $_POST["urlBanner"],
@@ -15,13 +16,19 @@
                 $_POST["direccion"],
                 $_POST["web"],
                 $_POST["email"],
-                $_POST["contrasena"]
+                $_POST["contrasena"],
+                $_POST["seguidores"],
+                $_POST["redesSociales"],
+                $_POST["productos"],
+                $_POST["comentarios"],
+                $_POST["sucursales"]
             );
-            $empresa->guardarEmpresa();
+                $empresa->guardarEmpresa();
             
             //Usuario::comprarArticulo(2);
             $resultado['Mensaje'] ="guardar el usuario: ".json_encode($_POST);
             echo json_encode($resultado);
+            
 
         break;
         case 'GET':
@@ -45,7 +52,11 @@
                 $_PUT["direccion"],
                 $_PUT["web"],
                 $_PUT["email"],
-                $_PUT["contrasena"]
+                $_PUT["contrasena"],
+                $_PUT["redesSociales"],
+                $_PUT["productos"],
+                $_PUT["comentarios"],
+                $_PUT["sucursales"]
             );
             $empresa->actualizarEmpresa($_GET['id']);
             $resultado['Mensaje'] = ' id= '.$_GET['id'].', informacion a actualizar: '.json_encode($_PUT);

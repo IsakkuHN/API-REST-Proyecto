@@ -25,7 +25,15 @@
         "inicioOferta": "12-24-2012",
         "finOferta": "12-31-2012",
         "cantidad": 100,
-        "sucursalDisponible": [1]
+        "sucursalDisponible": [1],
+        "evaluacion": [
+          {
+            "usuario": "Pedro",
+            "calificacion": 3,
+            "comentario": "Me gusto mucho pero",
+            "fecha": "12-25-2012"
+          }
+        ]
       },
       {
         "nombre": "Esferas #2",
@@ -37,19 +45,15 @@
         "inicioOferta": "12-24-2012",
         "finOferta": "12-31-2012",
         "cantidad": 100,
-        "sucursalDisponible": [1]
-      },
-      {
-        "nombre": "Collar de Oolong",
-        "codigo": "14",
-        "descripcion": "Estampado de moda personalizado grabado nombre perro Collar Correa personalizado collares para mascotas perritos ID Tag para perros peque\u00f1os medianos grandes",
-        "imagen": "https://ae01.alicdn.com/kf/H792175bfac5a4f06b77ac4c340d899d1H/Estampado-de-moda-personalizado-grabado-nombre-perro-Collar-Correa-personalizado-collares-para-mascotas-perritos-ID-Tag.jpg",
-        "precioInicial": "1500",
-        "descuento": "15",
-        "inicioOferta": "2020-06-01",
-        "finOferta": "2020-06-07",
-        "cantidad": "15",
-        "sucursalDisponible": ["3"]
+        "sucursalDisponible": [1],
+        "evaluacion": [
+          {
+            "usuario": "Pedro",
+            "calificacion": 3,
+            "comentario": "Me gusto mucho pero",
+            "fecha": "12-25-2012"
+          }
+        ]
       }
     ],
     "comentarios": [

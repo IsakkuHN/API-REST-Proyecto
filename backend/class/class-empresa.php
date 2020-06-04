@@ -9,7 +9,6 @@
         private $web;
         private $email;
         private $contrasena;
-        private $seguidores = array();
         private $redesSociales = array(
             "facebook" => "",
             "instagram" =>"",
@@ -31,7 +30,7 @@
             "cantidad"           =>"",
             "existencia"         =>"",
             "sucursalDisponible" =>"",
-            "evaluaciones"         =>[]
+            "evaluacion"         =>[]
         );
         public function __construct(
             $nombreEmpresa,
@@ -42,7 +41,11 @@
             $direccion,
             $web,
             $email,
-            $contrasena
+            $contrasena,
+            $redesSociales,
+            $productos,
+            $comentarios,
+            $sucursales
         ){
             $this->nombreEmpresa = $nombreEmpresa;
             $this->codigoEmpresa = $codigoEmpresa;
@@ -53,6 +56,10 @@
             $this->web = $web;
             $this->email = $email;
             $this->contrasena = $contrasena;
+            $this->redesSociales = $redesSociales;
+            $this->productos = $productos;
+            $this->comentarios = $comentarios;
+            $this->sucursales = $sucursales;
         }
 
         public function guardarEmpresa(){
@@ -68,7 +75,6 @@
                 "web" =>$this->web,
                 "email"    =>$this->email,
                 "contrasena"      =>$this->contrasena,
-                "seguidores"        =>$this->seguidores,
                 "redesSociales"     =>$this->redesSociales,
                 "productos"     =>$this->productos,
                 "comentarios"       =>$this->comentarios,
@@ -90,6 +96,8 @@
                     $empresa = $empresas[$i];
                 }
             }
+
+        
             
             $empresa["nombreEmpresa"]     = $this->nombreEmpresa;
             $empresa["codigoEmpresa"]     = $this->codigoEmpresa;
@@ -100,12 +108,23 @@
             $empresa["web"]               = $this->web;
             $empresa["email"]             = $this->email;
             $empresa["contrasena"]        = $this->contrasena;
+            $empresa["redesSociales"]     = $this->redesSociales;
+            $empresa["productos"]         = $this->productos;
+            $empresa["comentarios"]       = $this->comentarios;
+            $empresa["sucursales"]        = $this->sucursales;
 
             $empresas[$indice] = $empresa;
             $archivo = fopen('../data/empresa.json','w');
             fwrite($archivo, json_encode($empresas));
             fclose($archivo);
             echo json_encode($empresas);
+        }
+
+        public static function actualizarEmpresas($json){
+            $archivo = fopen('../data/empresa.json','w');
+            fwrite($archivo, $json);
+            fclose($archivo);
+            echo json_encode($json);
         }
 
         public static function obtenerEmpresas(){
