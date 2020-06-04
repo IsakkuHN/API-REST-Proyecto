@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxer Profile Enterprise</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div id="navegacion-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="../img/01-16-___logo2.png" style="height: 50px;"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Foxer<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acceder
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ventanaModal">Iniciar
+                                Sesion</a>
+                            <a class="dropdown-item" href="#">Crear Cuenta para Cliente</a>
+                            <a class="dropdown-item" href="html/signInEmpresa.html">Crear Cuenta para Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="button">Buscar</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 " type="button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!--Contenido-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center p-5" id="contenidoPerfil">
+                <div id="foto">
+                    <h2>
+                        Nombre de la Empresa
+                    </h2>
+                    <div class="bannerEmpresa">
+                        <div class="bannerContenido">
+                            <img src="../img/01-16-___logo2.png" alt="" class="img-thumbnail rounded-circle"
+                                style="height: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center  mt-2 mb-5">
+
+                <div class="col-12 text-center  mt-2 mb-5">
+                    <!-- Botones para las ventanas Modales-->
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#staticBackdrop">
+                        Agregar Producto
+                    </button>
+                    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#static">
+                        Agregar Sucursal
+                    </button>
+                </div>
+
+                <!-- Modal Para Agregar Productos-->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Agregar Producto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Nombre</span>
+                                        <input class="form-control" type="text" placeholder="Nombre del Producto"
+                                            id="nombreProducto">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Código</span>
+                                        <input type="text" placeholder="Codigo del Producto" class="form-control"
+                                            id="codigoProducto">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Url Imagen</span>
+                                        <input type="text" placeholder="Imagen del Producto" class="form-control"
+                                            id="urlImagen">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Inicio de la Oferta</span>
+                                        <input type="date" class="form-control" id="inicioOferta">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Final de la Oferta</span>
+                                        <input type="date" class="form-control" id="finalOferta">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Cantidad</span>
+                                        <input type="number" placeholder="Cantidad de articulos en el Inventario"
+                                            class="form-control" id="cantidadProducto">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Precio</span>
+                                        <input type="number" placeholder="Precio Original del Articulo"
+                                            class="form-control" id="precioProducto">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Descuento</span>
+                                        <input type="number" placeholder="Descuento sobre el Precio Original"
+                                            class="form-control" id="descuento">
+                                    </div>
+                                    
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Sucursal Disponible</span>
+                                        <input type="number" class="form-control" id="sucursal"
+                                            placeholder="Local del Producto">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Descripcion</span>
+                                        <textarea type="textarea" placeholder="Descripcion del Producto"
+                                            class="form-control" id="descripcion"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-outline-success" onclick="agregarProducto(1)" data-dismiss="modal">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal para agregar Sucursales-->
+                <div class="modal fade" id="static" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticLabel">Agregar Sucursal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Nombre </span>
+                                        <input class="form-control" type="text" placeholder="Nombre de la Sucursal"
+                                            id="nombreSucursal">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Código</span>
+                                        <input type="text" placeholder="Codigo de la Sucursal" class="form-control"
+                                            id="codigoSucursal">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Direccion</span>
+                                        <input type="text" placeholder="Direccion de la Sucursal" class="form-control"
+                                            id="direccionSucursal">
+                                    </div>
+                                    <div class="input-group-prepend input-group mb-3">
+                                        <span class="input-group-text">Telefono</span>
+                                        <input type="text" class="form-control" id="telefonoSucursal"
+                                            placeholder="Telefono del Local">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger"
+                                    data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-outline-success">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="mb-5">Productos</h2>
+
+                <div class="col-12">
+                    <section >
+                        <div class="row" id="productos">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card card-cascade narrower">
+
+                                    <!-- Imagen -->
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                                            alt="Card image cap">
+                                        <a>
+                                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Contenido -->
+                                    <div class="card-body card-body-cascade">
+
+                                        <!-- Label -->
+                                        <h5 class="pink-text pb-2 pt-1"></i> Culinary</h5>
+                                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                            corporis suscipit
+                                            laboriosam, nisi ut aliquid ex ea commodi.</p>
+                                        <button class="btn btn-outline-success waves-effect waves-light"
+                                            data-toggle="modal" data-target="#staticProduct"
+                                            onclick="generarModalProducto()">Ver Mas</button>
+
+                                        <div class="modal fade" id="staticProduct" data-backdrop="static"
+                                            data-keyboard="false" tabindex="-1" role="dialog"
+                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog dialog-scrollable modal-lg modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticLabel">Product Name</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body row" id="cuerpoModal">
+                                                        <div class="col-4">
+                                                            <img src="https://cdn.pixabay.com/photo/2014/06/01/21/05/photo-effect-359981_960_720.jpg"
+                                                                class="card-img" alt="..."
+                                                                style="height: 200px; width: auto; ">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <h5 class="card-title">Nombre Producto</h5>
+                                                            <p class="card-text">Descripcion</p>
+                                                            <p class="card-text">
+                                                                <small class="text-muted">
+                                                                    Fecha Inicio - Fecha Final <br>
+                                                                    Precio Normal <br>
+                                                                    Descuento <br>
+                                                                    Sucursal Disponible <br>
+                                                                    <a href="#">Nombre de Empresa</a>
+                                                                </small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4 text-left">
+                                                            <img src="../img/qr.jpg" style="height: 200px;" alt="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger"
+                                                            data-dismiss="modal">Cancelar</button>
+                                                        <button type="button"
+                                                            class="btn btn-outline-success" data-dismiss="modal">Agregar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- footer -->
+                                    <div class="card-footer text-muted text-center">
+                                        2 days ago
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="contenidoProductos">
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>Redes Sociales</h4>
+            </div>
+        </div>
+
+    </footer>
+    <div id="modal-section">
+        <div class="modal fade" id="ventanaModal" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Iniciar Sesion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="contenidoll-modal">
+
+                        <div class="form-label-group">
+                            <input type="email" id="inputEmailLogin" class="form-control"
+                                placeholder="Correo Electronico" required autofocus />
+                            <label for="inputEmail">Correo Electronico</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <input type="password" id="inputPasswordLogin" class="form-control" placeholder="Contraseña"
+                                required />
+                            <label for="inputPassword">Contraseña</label>
+                        </div>
+
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me" /> Recordar Usuario
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success" onclick="comprobarLogin()">Iniciar
+                            Sesion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+    <!--Scripts-->
+    <script src="https://kit.fontawesome.com/ac019ea245.js" crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/controlador.js"></script>
+    <script src="../js/controladorEmpresa.js"></script>
+</body>
+
+</html>
